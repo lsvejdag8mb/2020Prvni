@@ -23,7 +23,11 @@ function vypocet() {
   } else if (op == "krat") {
     vysl = c1 * c2;
   } else if (op == "deleno") {
-    vysl = c1 / c2;
+    if (c2 == 0) {
+      alert("Nelze delit nulou!");
+    } else {
+      vysl = c1 / c2;
+    }
   }
 
   console.log(vysl);
