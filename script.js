@@ -30,7 +30,7 @@ function vypocet() {
     }
   }
 
-  if (document.getElementById("zaokrouhlit").checked) {
+  if (!isNaN(vysl) && document.getElementById("zaokrouhlit").checked) {
     let pm = document.getElementById("pocetmist").value;
     vysl = vysl.toFixed(pm);
   }
