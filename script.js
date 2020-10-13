@@ -30,6 +30,11 @@ function vypocet() {
     }
   }
 
+  if (document.getElementById("zaokrouhlit").checked) {
+    let pm = document.getElementById("pocetmist").value;
+    vysl = vysl.toFixed(pm);
+  }
+
   console.log(vysl);
   document.getElementById("vysledek").value = vysl;
   document.getElementById("vysledek2").innerHTML = "Výsledek je <b>" + vysl + "</b>.";
