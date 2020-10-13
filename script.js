@@ -20,6 +20,10 @@ function vypocet() {
     vysl = c1 + c2;
   } else if (op == "minus") {
     vysl = c1 - c2;
+  } else if (op == "krat") {
+    vysl = c1 * c2;
+  } else if (op == "deleno") {
+    vysl = c1 / c2;
   }
 
   console.log(vysl);
